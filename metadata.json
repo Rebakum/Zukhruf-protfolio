@@ -1,0 +1,6 @@
+{
+  "name": "Zukhruf Portfolio",
+  "description": "Professional graphic design and brand identity portfolio for Zukhruf Creative Design Academy.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
