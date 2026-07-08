@@ -48,43 +48,43 @@ type PortfolioItem = {
 };
 
 const portfolioItems: PortfolioItem[] = [
-  { id: "logo-1", projectTitle: "Brand AMANAH", category: "LOGO DESIGN", render: () => <img src={logo1} alt="Logo 1" className="w-full h-full object-contain rounded-xl" referrerPolicy="no-referrer" /> },
-  { id: "logo-2", projectTitle: "Brand B.M FUNDING", category: "LOGO DESIGN", render: () => <img src={logo2} alt="Logo 2" className="w-full h-full object-contain rounded-xl" referrerPolicy="no-referrer" /> },
-  { id: "logo-3", projectTitle: "Brand DLOGY", category: "LOGO DESIGN", render: () => <img src={logo3} alt="Logo 3" className="w-full h-full object-contain rounded-xl" referrerPolicy="no-referrer" /> },
-  { id: "logo-4", projectTitle: "Brand FARAH", category: "LOGO DESIGN", render: () => <img src={logo4} alt="Logo 4" className="w-full h-full object-contain rounded-xl" referrerPolicy="no-referrer" /> },
-  { id: "logo-5", projectTitle: "Brand AMANAH ", category: "LOGO DESIGN", render: () => <img src={logo5} alt="Logo 5" className="w-full h-full object-contain rounded-xl" referrerPolicy="no-referrer" /> },
-  { id: "logo-6", projectTitle: "Brand BARAKAH", category: "LOGO DESIGN", render: () => <img src={logo6} alt="Logo 6" className="w-full h-full object-contain rounded-xl" referrerPolicy="no-referrer" /> },
-  { id: "logo-7", projectTitle: "Brand BARAKAH", category: "LOGO DESIGN", render: () => <img src={logo7} alt="Logo 7" className="w-full h-full object-contain rounded-xl" referrerPolicy="no-referrer" /> },
-  { id: "logo-8", projectTitle: "Brand ONE UMMA HEART", category: "LOGO DESIGN", render: () => <img src={logo8} alt="Logo 8" className="w-full h-full object-contain rounded-xl" referrerPolicy="no-referrer" /> },
-  { id: "logo-9", projectTitle: "Brand MAKHZAAN", category: "LOGO DESIGN", render: () => <img src={logo9} alt="Logo 9" className="w-full h-full object-contain rounded-xl" referrerPolicy="no-referrer" /> },
-  { id: "logo-10", projectTitle: "Brand MAKHZAAN", category: "LOGO DESIGN", render: () => <img src={logo10} alt="Logo 10" className="w-full h-full object-contain rounded-xl" referrerPolicy="no-referrer" /> },
-  { id: "logo-11", projectTitle: "Brand MAKHZAAN", category: "LOGO DESIGN", render: () => <img src={logo11} alt="Logo 11" className="w-full h-full object-contain rounded-xl" referrerPolicy="no-referrer" /> },
-  { id: "logo-12", projectTitle: "Brand MAKHZAAN", category: "LOGO DESIGN", render: () => <img src={logo12} alt="Logo 12" className="w-full h-full object-contain rounded-xl" referrerPolicy="no-referrer" /> },
-  { id: "logo-13", projectTitle: "Brand AN NOOR", category: "LOGO DESIGN", render: () => <img src={logo13} alt="Logo 13" className="w-full h-full object-contain rounded-xl" referrerPolicy="no-referrer" /> },
-  { id: "logo-14", projectTitle: "Brand AN NOOR", category: "LOGO DESIGN", render: () => <img src={logo14} alt="Logo 14" className="w-full h-full object-contain rounded-xl" referrerPolicy="no-referrer" /> },
-  { id: "logo-15", projectTitle: "Brand ARAF", category: "LOGO DESIGN", render: () => <img src={logo15} alt="Logo 15" className="w-full h-full object-contain rounded-xl" referrerPolicy="no-referrer" /> },
-  { id: "logo-16", projectTitle: "Brand ARAF", category: "LOGO DESIGN", render: () => <img src={logo16} alt="Logo 16" className="w-full h-full object-contain rounded-xl" referrerPolicy="no-referrer" /> },
-  { id: "logo-17", projectTitle: "Brand ZAFA ", category: "LOGO DESIGN", render: () => <img src={logo17} alt="Logo 17" className="w-full h-full object-contain rounded-xl" referrerPolicy="no-referrer" /> },
-  { id: "logo-18", projectTitle: "Brand MAKHZAAN", category: "LOGO DESIGN", render: () => <img src={logo18} alt="Logo 18" className="w-full h-full object-contain rounded-xl" referrerPolicy="no-referrer" /> },
-  { id: "logo-19", projectTitle: "Brand MAKHZAAN", category: "LOGO DESIGN", render: () => <img src={log19} alt="Logo 19" className="w-full h-full object-contain rounded-xl" referrerPolicy="no-referrer" /> },
-  { id: "print-10", projectTitle: "ZAFA", category: "PRINT DESIGN", render: () => <img src={img10} alt="Print Design 1" className="w-full h-full object-cover rounded-xl" referrerPolicy="no-referrer" /> },
-  { id: "print-11", projectTitle: "AN-NOOR", category: "PRINT DESIGN", render: () => <img src={img11} alt="Print Design 2" className="w-full h-full object-cover rounded-xl" referrerPolicy="no-referrer" /> },
-  { id: "print-12", projectTitle: "GRAFITY", category: "PRINT DESIGN", render: () => <img src={img12} alt="Print Design 3" className="w-full h-full object-cover rounded-xl" referrerPolicy="no-referrer" /> },
-  { id: "print-13", projectTitle: "GRAFITY", category: "PRINT DESIGN", render: () => <img src={img13} alt="Print Design 4" className="w-full h-full object-cover rounded-xl" referrerPolicy="no-referrer" /> },
-  { id: "print-14", projectTitle: "BARAKAH", category: "PRINT DESIGN", render: () => <img src={img14} alt="Print Design 5" className="w-full h-full object-cover rounded-xl" referrerPolicy="no-referrer" /> },
-  { id: "social-1", projectTitle: "EVENING GAZA", category: "SOCIAL MEDIA", render: () => <img src={social1} alt="Social Media 1" className="w-full h-full object-cover rounded-xl" referrerPolicy="no-referrer" /> },
-  { id: "social-2", projectTitle: "EVENING GAZA", category: "SOCIAL MEDIA", render: () => <img src={social2} alt="Social Media 2" className="w-full h-full object-cover rounded-xl" referrerPolicy="no-referrer" /> },
-  { id: "social-3", projectTitle: "EVENING GAZA", category: "SOCIAL MEDIA", render: () => <img src={social3} alt="Social Media 3" className="w-full h-full object-cover rounded-xl" referrerPolicy="no-referrer" /> },
-  { id: "social-4", projectTitle: "EVENING GAZA", category: "SOCIAL MEDIA", render: () => <img src={social4} alt="Social Media 4" className="w-full h-full object-cover rounded-xl" referrerPolicy="no-referrer" /> },
-  { id: "social-5", projectTitle: "EVENING GAZA", category: "SOCIAL MEDIA", render: () => <img src={social5} alt="Social Media 5" className="w-full h-full object-cover rounded-xl" referrerPolicy="no-referrer" /> },
-  { id: "brand-1", projectTitle: "Branded Bag", category: "BRANDING", render: () => <img src={branding_bag} alt="Branded Bag" className="w-full h-full object-cover rounded-xl" referrerPolicy="no-referrer" /> },
-  { id: "brand-2", projectTitle: "Branded Mug", category: "BRANDING", render: () => <img src={branding_mug} alt="Branded Mug" className="w-full h-full object-cover rounded-xl" referrerPolicy="no-referrer" /> },
-  { id: "brand-3", projectTitle: "Branded Notebook", category: "BRANDING", render: () => <img src={branding_notebook} alt="Branded Notebook" className="w-full h-full object-cover rounded-xl" referrerPolicy="no-referrer" /> },
-  { id: "brand-4", projectTitle: "Branded Signboard", category: "BRANDING", render: () => <img src={branding_signboard} alt="Branded Signboard" className="w-full h-full object-cover rounded-xl" referrerPolicy="no-referrer" /> },
-  { id: "brand-5", projectTitle: "Branded T-Shirt", category: "BRANDING", render: () => <img src={branding_tshirt} alt="Branded T-Shirt" className="w-full h-full object-cover rounded-xl" referrerPolicy="no-referrer" /> },
-  { id: "pack-1", projectTitle: "Tote Bag", category: "PACKAGING", render: () => <img src={bag1} alt="Tote Bag" className="w-full h-full object-cover rounded-xl" referrerPolicy="no-referrer" /> },
-  { id: "pack-2", projectTitle: "Merch Bag", category: "PACKAGING", render: () => <img src={bag2} alt="Merch Bag" className="w-full h-full object-cover rounded-xl" referrerPolicy="no-referrer" /> },
-  { id: "pack-3", projectTitle: "Canvas Bag", category: "PACKAGING", render: () => <img src={bag3} alt="Canvas Bag" className="w-full h-full object-cover rounded-xl" referrerPolicy="no-referrer" /> },
+  { id: "logo-1", projectTitle: "Brand AMANAH", category: "LOGO DESIGN", render: () => <img src={logo1} alt="Logo 1" className="w-full h-full hover:scale-105 object-contain rounded-xl border border-gray-300" referrerPolicy="no-referrer" /> },
+  { id: "logo-2", projectTitle: "Brand B.M FUNDING", category: "LOGO DESIGN", render: () => <img src={logo2} alt="Logo 2" className="w-full hover:scale-105 h-full object-contain rounded-xl border border-gray-300" referrerPolicy="no-referrer" /> },
+  { id: "logo-3", projectTitle: "Brand DLOGY", category: "LOGO DESIGN", render: () => <img src={logo3} alt="Logo 3" className="w-full hover:scale-105 h-full object-contain rounded-xl border border-gray-300" referrerPolicy="no-referrer" /> },
+  { id: "logo-4", projectTitle: "Brand FARAH", category: "LOGO DESIGN", render: () => <img src={logo4} alt="Logo 4" className="w-full hover:scale-105 h-full object-contain rounded-xl border border-gray-300" referrerPolicy="no-referrer" /> },
+  { id: "logo-5", projectTitle: "Brand AMANAH ", category: "LOGO DESIGN", render: () => <img src={logo5} alt="Logo 5" className="w-full hover:scale-105 h-full object-contain rounded-xl border border-gray-300" referrerPolicy="no-referrer" /> },
+  { id: "logo-6", projectTitle: "Brand BARAKAH", category: "LOGO DESIGN", render: () => <img src={logo6} alt="Logo 6" className="w-full hover:scale-105 h-full object-contain rounded-xl border border-gray-300" referrerPolicy="no-referrer" /> },
+  { id: "logo-7", projectTitle: "Brand BARAKAH", category: "LOGO DESIGN", render: () => <img src={logo7} alt="Logo 7" className="w-full hover:scale-105 h-full object-contain rounded-xl border border-gray-300" referrerPolicy="no-referrer" /> },
+  { id: "logo-8", projectTitle: "Brand ONE UMMA HEART", category: "LOGO DESIGN", render: () => <img src={logo8} alt="Logo 8" className="w-full hover:scale-105 h-full object-contain rounded-xl border border-gray-300" referrerPolicy="no-referrer" /> },
+  { id: "logo-9", projectTitle: "Brand MAKHZAAN", category: "LOGO DESIGN", render: () => <img src={logo9} alt="Logo 9" className="w-full hover:scale-105 h-full object-contain rounded-xl border border-gray-300" referrerPolicy="no-referrer" /> },
+  { id: "logo-10", projectTitle: "Brand MAKHZAAN", category: "LOGO DESIGN", render: () => <img src={logo10} alt="Logo 10" className="w-full hover:scale-105 h-full object-contain rounded-xl border border-gray-300" referrerPolicy="no-referrer" /> },
+  { id: "logo-11", projectTitle: "Brand MAKHZAAN", category: "LOGO DESIGN", render: () => <img src={logo11} alt="Logo 11" className="w-full hover:scale-105 h-full object-contain rounded-xl border border-gray-300" referrerPolicy="no-referrer" /> },
+  { id: "logo-12", projectTitle: "Brand MAKHZAAN", category: "LOGO DESIGN", render: () => <img src={logo12} alt="Logo 12" className="w-full hover:scale-105 h-full object-contain rounded-xl border border-gray-300" referrerPolicy="no-referrer" /> },
+  { id: "logo-13", projectTitle: "Brand AN NOOR", category: "LOGO DESIGN", render: () => <img src={logo13} alt="Logo 13" className="w-full hover:scale-105 h-full object-contain rounded-xl border border-gray-300" referrerPolicy="no-referrer" /> },
+  { id: "logo-14", projectTitle: "Brand AN NOOR", category: "LOGO DESIGN", render: () => <img src={logo14} alt="Logo 14" className="w-full hover:scale-105 h-full object-contain rounded-xl border border-gray-300" referrerPolicy="no-referrer" /> },
+  { id: "logo-15", projectTitle: "Brand ARAF", category: "LOGO DESIGN", render: () => <img src={logo15} alt="Logo 15" className="w-full hover:scale-105 h-full object-contain rounded-xl border border-gray-300" referrerPolicy="no-referrer" /> },
+  { id: "logo-16", projectTitle: "Brand ARAF", category: "LOGO DESIGN", render: () => <img src={logo16} alt="Logo 16" className="w-full hover:scale-105 h-full object-contain rounded-xl border border-gray-300" referrerPolicy="no-referrer" /> },
+  { id: "logo-17", projectTitle: "Brand ZAFA ", category: "LOGO DESIGN", render: () => <img src={logo17} alt="Logo 17" className="w-full hover:scale-105 h-full object-contain rounded-xl border border-gray-300" referrerPolicy="no-referrer" /> },
+  { id: "logo-18", projectTitle: "Brand MAKHZAAN", category: "LOGO DESIGN", render: () => <img src={logo18} alt="Logo 18" className="w-full hover:scale-105 h-full object-contain rounded-xl border border-gray-300" referrerPolicy="no-referrer" /> },
+  { id: "logo-19", projectTitle: "Brand MAKHZAAN", category: "LOGO DESIGN", render: () => <img src={log19} alt="Logo 19" className="w-full hover:scale-105 h-full object-contain rounded-xl border border-gray-300" referrerPolicy="no-referrer" /> },
+  { id: "print-10", projectTitle: "ZAFA", category: "PRINT DESIGN", render: () => <img src={img10} alt="Print Design 1" className="w-full hover:scale-105 h-full object-cover rounded-xl border border-gray-300" referrerPolicy="no-referrer" /> },
+  { id: "print-11", projectTitle: "AN-NOOR", category: "PRINT DESIGN", render: () => <img src={img11} alt="Print Design 2" className="w-full hover:scale-105 h-full object-cover rounded-xl border border-gray-300" referrerPolicy="no-referrer" /> },
+  { id: "print-12", projectTitle: "GRAFITY", category: "PRINT DESIGN", render: () => <img src={img12} alt="Print Design 3" className="w-full hover:scale-105 h-full object-cover rounded-xl border border-gray-300" referrerPolicy="no-referrer" /> },
+  { id: "print-13", projectTitle: "GRAFITY", category: "PRINT DESIGN", render: () => <img src={img13} alt="Print Design 4" className="w-full hover:scale-105 h-full object-cover rounded-xl border border-gray-300" referrerPolicy="no-referrer" /> },
+  { id: "print-14", projectTitle: "BARAKAH", category: "PRINT DESIGN", render: () => <img src={img14} alt="Print Design 5" className="w-full hover:scale-105 h-full object-cover rounded-xl border border-gray-300" referrerPolicy="no-referrer" /> },
+  { id: "social-1", projectTitle: "EVENING GAZA", category: "SOCIAL MEDIA", render: () => <img src={social1} alt="Social Media 1" className="w-full hover:scale-105 h-full object-cover rounded-xl border border-gray-300" referrerPolicy="no-referrer" /> },
+  { id: "social-2", projectTitle: "EVENING GAZA", category: "SOCIAL MEDIA", render: () => <img src={social2} alt="Social Media 2" className="w-full hover:scale-105 h-full object-cover rounded-xl border border-gray-300" referrerPolicy="no-referrer" /> },
+  { id: "social-3", projectTitle: "EVENING GAZA", category: "SOCIAL MEDIA", render: () => <img src={social3} alt="Social Media 3" className="w-full hover:scale-105 h-full object-cover rounded-xl border border-gray-300" referrerPolicy="no-referrer" /> },
+  { id: "social-4", projectTitle: "EVENING GAZA", category: "SOCIAL MEDIA", render: () => <img src={social4} alt="Social Media 4" className="w-full hover:scale-105 h-full object-cover rounded-xl border border-gray-300" referrerPolicy="no-referrer" /> },
+  { id: "social-5", projectTitle: "EVENING GAZA", category: "SOCIAL MEDIA", render: () => <img src={social5} alt="Social Media 5" className="w-full hover:scale-105 h-full object-cover rounded-xl border border-gray-300" referrerPolicy="no-referrer" /> },
+  { id: "brand-1", projectTitle: "Branded Bag", category: "BRANDING", render: () => <img src={branding_bag} alt="Branded Bag" className="w-full hover:scale-105 h-full object-cover rounded-xl border border-gray-300" referrerPolicy="no-referrer" /> },
+  { id: "brand-2", projectTitle: "Branded Mug", category: "BRANDING", render: () => <img src={branding_mug} alt="Branded Mug" className="w-full hover:scale-105 h-full object-cover rounded-xl border border-gray-300" referrerPolicy="no-referrer" /> },
+  { id: "brand-3", projectTitle: "Branded Notebook", category: "BRANDING", render: () => <img src={branding_notebook} alt="Branded Notebook" className="w-full hover:scale-105 h-full object-cover rounded-xl border border-gray-300" referrerPolicy="no-referrer" /> },
+  { id: "brand-4", projectTitle: "Branded Signboard", category: "BRANDING", render: () => <img src={branding_signboard} alt="Branded Signboard" className="w-full hover:scale-105 h-full object-cover rounded-xl border border-gray-300" referrerPolicy="no-referrer" /> },
+  { id: "brand-5", projectTitle: "Branded T-Shirt", category: "BRANDING", render: () => <img src={branding_tshirt} alt="Branded T-Shirt" className="w-full hover:scale-105 h-full object-cover rounded-xl border border-gray-300" referrerPolicy="no-referrer" /> },
+  { id: "pack-1", projectTitle: "Tote Bag", category: "PACKAGING", render: () => <img src={bag1} alt="Tote Bag" className="w-full hover:scale-105 h-full object-cover rounded-xl border border-gray-300" referrerPolicy="no-referrer" /> },
+  { id: "pack-2", projectTitle: "Merch Bag", category: "PACKAGING", render: () => <img src={bag2} alt="Merch Bag" className="w-full hover:scale-105 h-full object-cover rounded-xl border border-gray-300" referrerPolicy="no-referrer" /> },
+  { id: "pack-3", projectTitle: "Canvas Bag", category: "PACKAGING", render: () => <img src={bag3} alt="Canvas Bag" className="w-full hover:scale-105 h-full object-cover rounded-xl border border-gray-300" referrerPolicy="no-referrer" /> },
 ];
 
 export const PortfolioGallery: React.FC = () => {
@@ -121,9 +121,9 @@ export const PortfolioGallery: React.FC = () => {
           {filteredItems.map((item) => (
             <div
               key={item.id}
-              className="rounded-xl transition-all duration-300 cursor-pointer group"
+              className="rounded-xl transition-all duration-300 cursor-pointer group shadow-sm border border-slate-100 group-hover:shadow-lg group-hover:shadow-slate-200/60 group-hover:-translate-y-1 group-hover:border-slate-200 p-2"
             >
-              <div className="bg-white rounded-lg h-40 flex items-center justify-center p-4 shadow-sm border border-slate-100 group-hover:shadow-lg group-hover:shadow-slate-200/60 group-hover:-translate-y-1 group-hover:border-slate-200 transition-all duration-300">
+              <div className="bg-white rounded-lg h-40 flex items-center justify-center p-4 ">
                 {item.render()}
               </div>
 
