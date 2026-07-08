@@ -10,10 +10,10 @@ interface FAQItemProps {
 
 const FAQItem: React.FC<FAQItemProps> = ({ question, answer, isOpen, onToggle }) => {
   return (
-    <div className="border border-slate-100 rounded-2xl overflow-hidden bg-white shadow-sm transition-all duration-300">
+    <div className="border border-slate-100 rounded-2xl overflow-hidden bg-white shadow-sm transition-all duration-300 hover:shadow-md hover:border-slate-200">
       <button
         onClick={onToggle}
-        className="w-full flex justify-between items-center p-5 text-left font-display text-[13px] font-extrabold text-slate-800 hover:bg-slate-50 transition-colors focus:outline-none"
+        className="w-full flex justify-between items-center p-5 text-left font-display text-[13px] font-extrabold text-slate-800 hover:bg-slate-50 hover:pl-6 transition-all duration-200 focus:outline-none"
       >
         <span>{question}</span>
         <span className="text-[#E10F0F] shrink-0 ml-3">

@@ -71,7 +71,7 @@ export const Footer: React.FC = () => {
                 <li key={link.name}>
                   <a
                     href={link.href}
-                    className="text-[12px] font-medium text-slate-400 hover:text-white hover:underline transition-colors duration-200"
+                    className="text-[12px] font-medium text-slate-400 hover:text-white hover:pl-1 transition-all duration-200 inline-block"
                   >
                     {link.name}
                   </a>
@@ -90,7 +90,7 @@ export const Footer: React.FC = () => {
                 <li key={svc.name}>
                   <a
                     href={svc.href}
-                    className="text-[12px] font-medium text-slate-400 hover:text-white hover:underline transition-colors duration-200"
+                    className="text-[12px] font-medium text-slate-400 hover:text-white hover:pl-1 transition-all duration-200 inline-block"
                   >
                     {svc.name}
                   </a>
@@ -137,7 +137,7 @@ export const Footer: React.FC = () => {
           <button
             onClick={handleScrollTop}
             aria-label="Scroll to top"
-            className="w-11 h-11 rounded-full bg-[#E10F0F] hover:bg-[#C90D0D] text-white flex items-center justify-center transition-all duration-300 shadow-md shadow-red-500/20 hover:scale-110 active:scale-90 cursor-pointer"
+            className="w-11 h-11 rounded-full bg-[#E10F0F] hover:bg-[#C90D0D] text-white flex items-center justify-center transition-all duration-300 shadow-md shadow-red-500/20 hover:shadow-xl hover:shadow-red-500/30 hover:scale-110 active:scale-90 cursor-pointer"
           >
             <ChevronUp className="w-5 h-5 stroke-[3]" />
           </button>

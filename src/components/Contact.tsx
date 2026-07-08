@@ -78,7 +78,7 @@ export default function Contact({ initialProjectType = '' }: ContactProps) {
             <div className="space-y-6 w-full max-w-md">
               <a
                 href="mailto:hello@barakahstudio.com"
-                className="flex items-center gap-4 p-4 border border-red-100/50 bg-white hover:border-[#E10F0F]/30 hover:bg-red-50/20 rounded-xl transition-all duration-300 group shadow-sm"
+                className="flex items-center gap-4 p-4 border border-red-100/50 bg-white hover:border-[#E10F0F]/30 hover:bg-red-50/20 rounded-xl transition-all duration-300 group shadow-sm hover:shadow-md hover:shadow-red-100/50 hover:scale-[1.02]"
               >
                 <div className="w-10 h-10 rounded-lg bg-[#E10F0F]/10 flex items-center justify-center text-[#E10F0F]">
                   <Mail size={18} />
@@ -95,7 +95,7 @@ export default function Contact({ initialProjectType = '' }: ContactProps) {
 
               <a
                 href="tel:+15552345678"
-                className="flex items-center gap-4 p-4 border border-red-100/50 bg-white hover:border-[#E10F0F]/30 hover:bg-red-50/20 rounded-xl transition-all duration-300 group shadow-sm"
+                className="flex items-center gap-4 p-4 border border-red-100/50 bg-white hover:border-[#E10F0F]/30 hover:bg-red-50/20 rounded-xl transition-all duration-300 group shadow-sm hover:shadow-md hover:shadow-red-100/50 hover:scale-[1.02]"
               >
                 <div className="w-10 h-10 rounded-lg bg-[#E10F0F]/10 flex items-center justify-center text-[#E10F0F]">
                   <Phone size={18} />
@@ -241,7 +241,7 @@ export default function Contact({ initialProjectType = '' }: ContactProps) {
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="magnetic-btn w-full py-4.5 bg-[#E10F0F] hover:bg-[#C90D0D] text-white font-display font-black text-sm uppercase tracking-widest rounded-xl flex items-center justify-center gap-2.5 transition-all cursor-pointer shadow-xl shadow-[#E10F0F]/10 disabled:opacity-50"
+                    className="magnetic-btn w-full py-4.5 bg-[#E10F0F] hover:bg-[#C90D0D] text-white font-display font-black text-sm uppercase tracking-widest rounded-xl flex items-center justify-center gap-2.5 transition-all duration-300 cursor-pointer shadow-xl shadow-[#E10F0F]/10 hover:shadow-2xl hover:shadow-[#E10F0F]/25 hover:scale-[1.02] active:scale-[0.98] disabled:opacity-50"
                   >
                     {isSubmitting ? (
                       <>

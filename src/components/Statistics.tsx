@@ -29,15 +29,15 @@ export const Statistics: React.FC = () => {
     <section className="py-10 border-y border-slate-100">
       <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
         {stats.map((stat, i) => (
-          <div key={i} className="flex items-center gap-4 group">
-            <div className="w-14 h-14 rounded-xl bg-red-50 flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
+          <div key={i} className="flex items-center gap-4 group cursor-pointer">
+            <div className="w-14 h-14 rounded-xl bg-red-50 flex items-center justify-center transition-all duration-300 group-hover:scale-110">
               {stat.icon}
             </div>
             <div className="text-left">
-              <div className="text-2xl font-extrabold text-slate-900 leading-none">
+              <div className="text-2xl font-extrabold text-slate-900 leading-none transition-colors duration-300 group-hover:text-[#E10F0F]">
                 {stat.value}
               </div>
-              <div className="text-[12px] font-bold text-slate-400 mt-1.5 uppercase tracking-tight">
+              <div className="text-[12px] font-bold text-slate-400 mt-1.5 uppercase tracking-tight transition-colors duration-300 group-hover:text-slate-600">
                 {stat.label}
               </div>
             </div>

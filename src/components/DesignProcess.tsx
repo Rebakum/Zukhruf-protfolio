@@ -30,15 +30,15 @@ const steps = [
 ];
 
 const StepCard = ({ step }: { step: typeof steps[0] }) => (
-  <div className="bg-white border-2 border-slate-200 shadow-lg shadow-slate-200/60 rounded-2xl p-6 text-center flex flex-col items-center space-y-4 min-w-[220px] shrink-0 mx-3">
-    <div className="w-14 h-14 rounded-full border-2 border-slate-300 flex items-center justify-center font-display text-lg font-black text-slate-700 bg-slate-50">
+  <div className="bg-white border-2 border-slate-200 shadow-lg shadow-slate-200/60 rounded-2xl p-6 text-center flex flex-col items-center space-y-4 min-w-[220px] shrink-0 mx-3 transition-all duration-300 hover:border-[#E10F0F]/30 hover:shadow-xl hover:shadow-red-100/50 hover:scale-105 cursor-pointer group">
+    <div className="w-14 h-14 rounded-full border-2 border-slate-300 flex items-center justify-center font-display text-lg font-black text-slate-700 bg-slate-50 transition-all duration-300 group-hover:border-[#E10F0F]">
       {step.num}
     </div>
     <div className="space-y-1.5">
-      <h3 className="text-[14px] font-extrabold text-slate-900 tracking-tight">
+      <h3 className="text-[14px] font-extrabold text-slate-900 tracking-tight transition-colors duration-300 group-hover:text-[#E10F0F]">
         {step.title}
       </h3>
-      <p className="text-[12px] leading-relaxed text-slate-400 font-medium px-1">
+      <p className="text-[12px] leading-relaxed text-slate-400 font-medium px-1 transition-colors duration-300 group-hover:text-slate-600">
         {step.desc}
       </p>
     </div>

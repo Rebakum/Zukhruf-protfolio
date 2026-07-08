@@ -41,7 +41,7 @@ export const PricingPackages: React.FC = () => {
           {plans.map((plan) => (
             <div
               key={plan.title}
-              className="bg-white border border-slate-150 rounded-2xl p-6 flex flex-col items-center justify-between shadow-sm transition-all duration-300 hover:shadow-lg hover:scale-[1.01] group min-h-[340px]"
+              className="bg-white border border-slate-150 rounded-2xl p-6 flex flex-col items-center justify-between shadow-sm transition-all duration-300 hover:shadow-xl hover:shadow-slate-200/60 hover:scale-[1.03] hover:border-[#E10F0F]/30 group min-h-[340px]"
             >
               {/* Top part */}
               <div className="w-full flex flex-col items-center space-y-4">
@@ -73,7 +73,7 @@ export const PricingPackages: React.FC = () => {
               </div>
 
               {/* CTA Button */}
-              <button className="w-full mt-4 bg-[#E10F0F] hover:bg-[#C90D0D] text-white text-[11px] font-extrabold py-3 px-6 rounded-xl transition-colors duration-200 uppercase tracking-wider shadow-sm shadow-red-500/10">
+              <button className="w-full mt-4 bg-[#E10F0F] hover:bg-[#C90D0D] text-white text-[11px] font-extrabold py-3 px-6 rounded-xl transition-all duration-300 uppercase tracking-wider shadow-sm shadow-red-500/10 hover:shadow-lg hover:shadow-red-500/25 hover:scale-[1.02] active:scale-[0.98]">
                 Get Started
               </button>
             </div>

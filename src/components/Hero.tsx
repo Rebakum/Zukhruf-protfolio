@@ -6,20 +6,26 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/effect-fade";
 
-import heroMockup from "../assets/images/hero_mockup_1783403284557.jpg";
+import heroMockup from "../assets/images/img.jpg";
 import mugImg from "../assets/images/branding_mug_1783366599685.jpg";
-import tshirtImg from "../assets/images/branding_tshirt_1783366612633.jpg";
-import signboardImg from "../assets/images/branding_signboard_1783366626796.jpg";
-import bagImg from "../assets/images/branding_bag_1783366638160.jpg";
-import notebookImg from "../assets/images/branding_notebook_1783366650377.jpg";
+import tshirtImg from "../assets/images/img1.jpg";
+import signboardImg from "../assets/images/img2.jpg";
+import bagImg from "../assets/images/img3.jpg";
+import notebookImg from "../assets/images/img4.jpg";
+import bfFounder from "../assets/images/img5.jpg";
+import bfFounderImg from "../assets/images/img6.jpg";
+import sunAmanahkImg from "../assets/images/img7.jpg";
 
 const slides = [
   { image: heroMockup, title: "Zukhruf Creative", tag: "Brand Identity" },
   { image: mugImg, title: "BARAKAH Coffee", tag: "Branding / Merchandise" },
   { image: tshirtImg, title: "AMANAH Apparel", tag: "Packaging / Fashion" },
-  { image: signboardImg, title: "EMPOWER Building", tag: "Signage / Print" },
+  { image: signboardImg, title: "AMANAH Building", tag: "Signage / Print" },
   { image: bagImg, title: "BM FUNDING Tote", tag: "Logo / Identity" },
-  { image: notebookImg, title: "BARAKAH Planner", tag: "Branding / Print" },
+  { image: notebookImg, title: "MAKHZAAN Planner", tag: "Branding / Print" },
+  { image: bfFounder, title: "BM FUNDING Tote", tag: "Logo / Identity"},
+  { image: bfFounderImg,  title: "BM FUNDING Tote", tag: "Packaging / Fashion" },
+  { image: sunAmanahkImg, title: "AMANAH Apparel", tag: "Packaging / Fashion" },
 ];
 
 export const Hero: React.FC = () => {
@@ -62,14 +68,14 @@ export const Hero: React.FC = () => {
           <div className="flex flex-wrap gap-4 pt-4">
             <a
               href="#portfolio"
-              className="inline-flex items-center gap-2.5 bg-[#E10F0F] hover:bg-[#C90D0D] text-white text-[14px] font-bold py-4 px-8 rounded-xl transition-all duration-300 shadow-md shadow-red-500/10 hover:scale-[1.02] active:scale-[0.98]"
+              className="inline-flex items-center gap-2.5 bg-[#E10F0F] hover:bg-[#C90D0D] text-white text-[14px] font-bold py-4 px-8 rounded-xl transition-all duration-300 shadow-md shadow-red-500/10 hover:shadow-xl hover:shadow-red-500/25 hover:scale-[1.05] active:scale-[0.98] group"
             >
               View Portfolio
               <ArrowRight className="w-4 h-4" />
             </a>
             <a
               href="#contact"
-              className="inline-flex items-center gap-2.5 bg-white hover:bg-slate-50 border border-slate-200 text-slate-800 text-[14px] font-bold py-4 px-8 rounded-xl transition-all duration-300 hover:scale-[1.02] active:scale-[0.98]"
+              className="inline-flex items-center gap-2.5 bg-white hover:bg-slate-50 border border-slate-200 text-slate-800 text-[14px] font-bold py-4 px-8 rounded-xl transition-all duration-300 hover:shadow-lg hover:shadow-slate-200/50 hover:scale-[1.05] active:scale-[0.98] group"
             >
               Hire Me
               <ArrowRight className="w-4 h-4" />

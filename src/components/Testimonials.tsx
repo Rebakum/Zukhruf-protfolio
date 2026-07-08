@@ -40,27 +40,27 @@ const reviews = [
 ];
 
 const ReviewCard = ({ review }: { review: typeof reviews[0] }) => (
-  <div className="bg-white border-2 border-slate-200 shadow-lg shadow-slate-200/60 rounded-2xl p-6 flex flex-col justify-between min-w-[320px] max-w-[350px] shrink-0 mx-3">
+  <div className="bg-white border-2 border-slate-200 shadow-lg shadow-slate-200/60 rounded-2xl p-6 flex flex-col justify-between min-w-[320px] max-w-[350px] shrink-0 mx-3 transition-all duration-300 hover:border-[#E10F0F]/30 hover:shadow-xl hover:shadow-red-100/50 hover:scale-105 cursor-pointer group">
     <div>
-      <div className="text-3xl font-serif font-black text-[#E10F0F] leading-none mb-2">
+      <div className="text-3xl font-serif font-black text-[#E10F0F] leading-none mb-2 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-[-5deg]">
         &ldquo;
       </div>
-      <p className="text-[13px] leading-relaxed text-slate-500 font-medium italic mb-5">
+      <p className="text-[13px] leading-relaxed text-slate-500 font-medium italic mb-5 transition-colors duration-300 group-hover:text-slate-700">
         {review.text}
       </p>
     </div>
-    <div className="flex items-center gap-3 pt-4 border-t border-slate-100">
+    <div className="flex items-center gap-3 pt-4 border-t border-slate-100 transition-colors duration-300 group-hover:border-[#E10F0F]/20">
       <img
         src={review.avatar}
         alt={review.name}
-        className="w-10 h-10 rounded-full object-cover border border-slate-200"
+        className="w-10 h-10 rounded-full object-cover border border-slate-200 transition-all duration-300 group-hover:border-[#E10F0F] group-hover:shadow-md group-hover:shadow-red-100/50"
         referrerPolicy="no-referrer"
       />
       <div className="text-left leading-tight">
-        <div className="text-[12px] font-extrabold text-slate-800">
+        <div className="text-[12px] font-extrabold text-slate-800 transition-colors duration-300 group-hover:text-[#E10F0F]">
           {review.name}
         </div>
-        <div className="text-[10px] font-bold text-slate-400">
+        <div className="text-[10px] font-bold text-slate-400 transition-colors duration-300 group-hover:text-slate-600">
           {review.role}
         </div>
       </div>

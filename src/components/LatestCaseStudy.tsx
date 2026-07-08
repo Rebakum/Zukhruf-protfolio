@@ -4,7 +4,7 @@ import latestCaseStudyImg from "../assets/images/latest_case_study_1783403341928
 
 export const LatestCaseStudy: React.FC = () => {
   return (
-    <div className="space-y-6 text-left bg-white border border-slate-100 p-7 rounded-2xl shadow-sm hover:shadow-lg transition-shadow duration-300">
+    <div className="space-y-6 text-left bg-white border border-slate-100 p-7 rounded-2xl shadow-sm hover:shadow-xl hover:shadow-slate-200/60 hover:border-slate-200 transition-all duration-300 cursor-pointer group">
       <div className="space-y-2">
         <span className="text-[11px] font-extrabold tracking-[0.2em] text-[#E10F0F] uppercase block">
           Latest Case Study
@@ -20,9 +20,9 @@ export const LatestCaseStudy: React.FC = () => {
       </p>
 
       <div>
-        <button className="inline-flex items-center gap-2.5 bg-[#E10F0F] hover:bg-[#C90D0D] text-white text-[12px] font-bold py-3 px-6 rounded-xl transition-colors duration-200 shadow-md shadow-red-500/5">
+        <button className="inline-flex items-center gap-2.5 bg-[#E10F0F] hover:bg-[#C90D0D] text-white text-[12px] font-bold py-3 px-6 rounded-xl transition-all duration-300 shadow-md shadow-red-500/5 hover:shadow-lg hover:shadow-red-500/25 hover:scale-[1.05] active:scale-[0.98] group-hover:translate-x-1">
           View Case Study
-          <ArrowRight className="w-4 h-4" />
+          <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
         </button>
       </div>
 

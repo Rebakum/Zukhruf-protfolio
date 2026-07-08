@@ -37,7 +37,7 @@ export const Services: React.FC = () => {
   ];
 
   return (
-    <section id="services" className="py-16 border border-slate-200 rounded-2xl shadow-lg shadow-slate-200/50 bg-white hover:shadow-xl hover:shadow-[#E10F0F]/10 hover:border-[#E10F0F]/30 transition-all duration-300 group">
+    <section id="services" className="py-16  rounded-2xl shadow-slate-200/50 bg-slate-50 ">
       <div className="space-y-10 px-6">
         {/* Header */}
         <motion.div
@@ -64,19 +64,19 @@ export const Services: React.FC = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: i * 0.08 }}
-              className="bg-white border-2 border-slate-200 shadow-lg shadow-slate-200/60 rounded-2xl p-7 text-center flex flex-col items-center space-y-4 transition-all duration-300 hover:shadow-2xl hover:shadow-slate-300/60 min-h-[220px]"
+              className="bg-white hover:border-red-500/50 rounded-2xl p-7 text-center flex flex-col items-center space-y-4 transition-all duration-300 min-h-[220px] hover:shadow-xl hover:shadow-red-100/60 hover:scale-[1.03] border border-slate-200 cursor-pointer group"
             >
               {/* Icon Holder */}
-              <div className="w-14 h-14 rounded-full bg-slate-50 flex items-center justify-center border border-slate-200 transition-all duration-300">
+              <div className="w-14 h-14 rounded-full bg-white flex items-center justify-center transition-all duration-300 group-hover:scale-110">
                 {service.icon}
               </div>
 
               {/* Text */}
               <div className="space-y-2">
-                <h3 className="text-[14px] font-extrabold text-slate-900 tracking-tight uppercase">
+                <h3 className="text-[14px] font-extrabold text-slate-900 tracking-tight uppercase transition-colors duration-300 group-hover:text-[#E10F0F]">
                   {service.title}
                 </h3>
-                <p className="text-[12px] leading-relaxed text-slate-400 font-medium px-2">
+                <p className="text-[12px] leading-relaxed text-slate-400 font-medium px-2 transition-colors duration-300 group-hover:text-slate-600">
                   {service.desc}
                 </p>
               </div>

@@ -2,6 +2,44 @@ import React, { useState } from "react";
 import { FeaturedProjects } from "./FeaturedProjects";
 import { ArrowRight } from "lucide-react";
 
+import logo1 from "../assets/images/logo1.jpg";
+import logo2 from "../assets/images/logo2.jpg";
+import logo3 from "../assets/images/logo3.jpg";
+import logo4 from "../assets/images/logo4.jpg";
+import logo5 from "../assets/images/logo5.jpg";
+import logo6 from "../assets/images/logo6.jpg";
+import logo7 from "../assets/images/logo7.jpg";
+import logo8 from "../assets/images/logo8.jpg";
+import logo9 from "../assets/images/logo9.jpg";
+import logo10 from "../assets/images/logo10.jpg";
+import logo11 from "../assets/images/logo11.jpg";
+import logo12 from "../assets/images/logo12.jpg";
+import logo13 from "../assets/images/logo13.jpg";
+import logo14 from "../assets/images/logo14.jpg";
+import logo15 from "../assets/images/logo15.jpg";
+import logo16 from "../assets/images/logo16.jpg";
+import logo17 from "../assets/images/logo17.jpg";
+import logo18 from "../assets/images/logo18.jpg";
+import log19 from "../assets/images/log19.jpg";
+import img10 from "../assets/images/img10.jpg";
+import img11 from "../assets/images/img11.jpg";
+import img12 from "../assets/images/img12.jpg";
+import img13 from "../assets/images/img13.jpg";
+import img14 from "../assets/images/img14.jpg";
+import social1 from "../assets/images/social1.jpg";
+import social2 from "../assets/images/social2.jpg";
+import social3 from "../assets/images/social3.jpg";
+import social4 from "../assets/images/social4.jpg";
+import social5 from "../assets/images/social5.jpg";
+import branding_bag from "../assets/images/branding_bag_1783366638160.jpg";
+import branding_mug from "../assets/images/branding_mug_1783366599685.jpg";
+import branding_notebook from "../assets/images/branding_notebook_1783366650377.jpg";
+import branding_signboard from "../assets/images/branding_signboard_1783366626796.jpg";
+import branding_tshirt from "../assets/images/branding_tshirt_1783366612633.jpg";
+import bag1 from "../assets/images/bag-1.jpg";
+import bag2 from "../assets/images/bag2.jpg";
+import bag3 from "../assets/images/bag-3.jpg";
+
 type PortfolioItem = {
   id: string;
   projectTitle: string;
@@ -9,175 +47,44 @@ type PortfolioItem = {
   render: () => React.ReactNode;
 };
 
-const AmanahLogo = () => (
-  <div className="flex flex-col items-center gap-1">
-    <span className="text-2xl font-bold text-teal-800 tracking-tighter" style={{ fontFamily: "serif" }}>
-      idl:
-    </span>
-    <span className="text-[8px] font-bold text-teal-800 tracking-[0.25em] uppercase">
-      Amanah Foundation
-    </span>
-  </div>
-);
-
-const BarakahTreeLogo = () => (
-  <div className="flex flex-col items-center gap-1">
-    <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
-      <circle cx="20" cy="14" r="6" stroke="#2d6a4f" strokeWidth="1.5" fill="none" />
-      <line x1="20" y1="20" x2="20" y2="34" stroke="#2d6a4f" strokeWidth="1.5" />
-      <circle cx="20" cy="14" r="2" fill="#2d6a4f" />
-    </svg>
-    <span className="text-[7px] font-bold text-teal-800 tracking-[0.15em] uppercase text-center leading-tight">
-      Barakah<br />Foundation
-    </span>
-  </div>
-);
-
-const BMFundingLogo = () => (
-  <div className="flex flex-col items-center gap-1">
-    <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
-      <circle cx="20" cy="18" r="8" stroke="#d4380d" strokeWidth="1.5" fill="none" />
-      {[...Array(8)].map((_, i) => {
-        const angle = (i * 45 * Math.PI) / 180;
-        return (
-          <line
-            key={i}
-            x1={20 + 10 * Math.cos(angle)}
-            y1={18 + 10 * Math.sin(angle)}
-            x2={20 + 13 * Math.cos(angle)}
-            y2={18 + 13 * Math.sin(angle)}
-            stroke="#d4380d"
-            strokeWidth="1.5"
-          />
-        );
-      })}
-      <circle cx="20" cy="18" r="3" fill="#d4380d" />
-    </svg>
-    <span className="text-[7px] font-bold text-red-700 tracking-[0.1em] uppercase text-center leading-tight">
-      B.M.Funding<br />Foundation
-    </span>
-  </div>
-);
-
-const EmpowerLogo = () => (
-  <div className="flex flex-col items-center gap-1">
-    <svg width="40" height="36" viewBox="0 0 40 36" fill="none">
-      <path d="M20 4L36 32H4L20 4Z" stroke="#1a3a5c" strokeWidth="1.5" fill="none" />
-      <path d="M20 12L28 28H12L20 12Z" stroke="#d4380d" strokeWidth="1" fill="none" />
-    </svg>
-    <span className="text-[7px] font-bold text-slate-700 tracking-[0.15em] uppercase text-center leading-tight">
-      Empower<br />World
-    </span>
-  </div>
-);
-
-const BusinessCardsSpread = () => (
-  <div className="relative w-full h-full flex items-center justify-center">
-    <div className="absolute" style={{ transform: "rotate(-8deg) translateX(-10px)", top: "20%" }}>
-      <div className="w-16 h-10 bg-teal-700 rounded shadow-md" />
-    </div>
-    <div className="absolute" style={{ transform: "rotate(4deg) translateX(8px)", top: "25%" }}>
-      <div className="w-16 h-10 bg-white border border-slate-200 rounded shadow-md flex items-center justify-center">
-        <div className="w-6 h-1 bg-slate-300 rounded" />
-      </div>
-    </div>
-  </div>
-);
-
-const AmanahMug = () => (
-  <div className="flex items-center justify-center">
-    <svg width="50" height="50" viewBox="0 0 50 50" fill="none">
-      <rect x="8" y="12" width="24" height="28" rx="3" stroke="#999" strokeWidth="1.5" fill="white" />
-      <path d="M32 18C32 18 38 18 38 25C38 32 32 32 32 32" stroke="#999" strokeWidth="1.5" fill="none" />
-      <rect x="13" y="36" width="14" height="3" rx="1" fill="#e5e5e5" />
-    </svg>
-  </div>
-);
-
-const MinimalistPackaging = () => (
-  <div className="flex items-center justify-center">
-    <div className="w-20 h-20 bg-emerald-700 rounded-lg shadow-md flex items-center justify-center" style={{ transform: "rotate(-5deg)" }}>
-      <div className="w-6 h-6 border-2 border-white/40 rounded-sm" />
-    </div>
-  </div>
-);
-
-const BarakahGiftBag = () => (
-  <div className="flex items-center justify-center">
-    <svg width="50" height="55" viewBox="0 0 50 55" fill="none">
-      <rect x="5" y="18" width="40" height="34" rx="2" stroke="#8b7355" strokeWidth="1.5" fill="#f5f0e8" />
-      <path d="M15 18C15 10 20 6 25 6C30 6 35 10 35 18" stroke="#8b7355" strokeWidth="1.5" fill="none" />
-      <line x1="25" y1="6" x2="25" y2="18" stroke="#8b7355" strokeWidth="1" />
-    </svg>
-  </div>
-);
-
-const ZukhrufTshirt = () => (
-  <div className="flex items-center justify-center">
-    <svg width="55" height="50" viewBox="0 0 55 50" fill="none">
-      <path d="M15 10L5 18L12 22L12 44L43 44L43 22L50 18L40 10L35 16H20L15 10Z" fill="#d4380d" stroke="#b72d1e" strokeWidth="1" />
-      <path d="M20 16H35" stroke="white" strokeWidth="0.5" />
-    </svg>
-  </div>
-);
-
-const BMSignboard = () => (
-  <div className="flex items-center justify-center">
-    <div className="w-full h-full bg-[#1a2332] rounded flex flex-col items-center justify-center gap-1">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-        <circle cx="12" cy="12" r="10" stroke="#3a8a6e" strokeWidth="1" fill="none" />
-        <circle cx="12" cy="12" r="6" stroke="#3a8a6e" strokeWidth="0.5" fill="none" />
-        <circle cx="12" cy="12" r="2" fill="#3a8a6e" />
-      </svg>
-      <span className="text-[6px] text-white/80 tracking-[0.2em] uppercase font-semibold">
-        Barakah
-      </span>
-    </div>
-  </div>
-);
-
-const CorporateStationery = () => (
-  <div className="flex items-center justify-center relative">
-    <div className="absolute" style={{ transform: "rotate(-10deg) translateX(-8px)" }}>
-      <div className="w-14 h-10 bg-white border border-slate-200 rounded shadow-sm flex items-center justify-center">
-        <div className="w-4 h-1 bg-red-400 rounded" />
-      </div>
-    </div>
-    <div className="absolute" style={{ transform: "rotate(5deg) translateX(8px)", top: "5px" }}>
-      <div className="w-14 h-10 bg-red-500 rounded shadow-sm flex items-center justify-center">
-        <div className="w-4 h-1 bg-white/50 rounded" />
-      </div>
-    </div>
-  </div>
-);
-
-const ZukhrufNotebook = () => (
-  <div className="flex items-center justify-center">
-    <svg width="45" height="50" viewBox="0 0 45 50" fill="none">
-      <rect x="5" y="2" width="32" height="44" rx="2" fill="#d4380d" stroke="#b72d1e" strokeWidth="1" />
-      <rect x="5" y="2" width="32" height="44" rx="2" fill="none" stroke="#c9341c" strokeWidth="0.5" />
-      <line x1="8" y1="2" x2="8" y2="46" stroke="#b72d1e" strokeWidth="0.5" />
-      <path d="M37 8H40L42 10V40L40 42H37" stroke="#b72d1e" strokeWidth="1" fill="#c9341c" />
-      <text x="21" y="28" textAnchor="middle" fill="white" fontSize="14" fontWeight="bold" fontFamily="serif">
-        Z
-      </text>
-    </svg>
-  </div>
-);
-
 const portfolioItems: PortfolioItem[] = [
-  { id: "amanah-identity", projectTitle: "Amanah Identity", category: "LOGO DESIGN", render: () => <AmanahLogo /> },
-  { id: "barakah-tree", projectTitle: "Barakah Tree", category: "LOGO DESIGN", render: () => <BarakahTreeLogo /> },
-  { id: "bm-funding-brand", projectTitle: "B.M. Funding Brand", category: "LOGO DESIGN", render: () => <BMFundingLogo /> },
-  { id: "empower-world", projectTitle: "Empower World", category: "LOGO DESIGN", render: () => <EmpowerLogo /> },
-  { id: "business-cards", projectTitle: "Business Cards Spread", category: "PRINT DESIGN", render: () => <BusinessCardsSpread /> },
-  { id: "amanah-mug", projectTitle: "Amanah Premium Mug", category: "BRANDING", render: () => <AmanahMug /> },
-  { id: "minimalist-packaging", projectTitle: "Minimalist Packaging", category: "PACKAGING", render: () => <MinimalistPackaging /> },
-  { id: "barakah-gift-bag", projectTitle: "Barakah Gift Bag", category: "PACKAGING", render: () => <BarakahGiftBag /> },
-  { id: "zukhruf-tshirt", projectTitle: "Zukhruf Red T-Shirt", category: "BRANDING", render: () => <ZukhrufTshirt /> },
-  { id: "bm-signboard", projectTitle: "B.M. Wood Signboard", category: "BRANDING", render: () => <BMSignboard /> },
-  { id: "corporate-stationery", projectTitle: "Corporate Stationery", category: "PRINT DESIGN", render: () => <CorporateStationery /> },
-  { id: "zukhruf-notebook", projectTitle: "Zukhruf Notebook", category: "BRANDING", render: () => <ZukhrufNotebook /> },
+  { id: "logo-1", projectTitle: "Brand AMANAH", category: "LOGO DESIGN", render: () => <img src={logo1} alt="Logo 1" className="w-full h-full object-contain rounded-xl" referrerPolicy="no-referrer" /> },
+  { id: "logo-2", projectTitle: "Brand B.M FUNDING", category: "LOGO DESIGN", render: () => <img src={logo2} alt="Logo 2" className="w-full h-full object-contain rounded-xl" referrerPolicy="no-referrer" /> },
+  { id: "logo-3", projectTitle: "Brand DLOGY", category: "LOGO DESIGN", render: () => <img src={logo3} alt="Logo 3" className="w-full h-full object-contain rounded-xl" referrerPolicy="no-referrer" /> },
+  { id: "logo-4", projectTitle: "Brand FARAH", category: "LOGO DESIGN", render: () => <img src={logo4} alt="Logo 4" className="w-full h-full object-contain rounded-xl" referrerPolicy="no-referrer" /> },
+  { id: "logo-5", projectTitle: "Brand AMANAH ", category: "LOGO DESIGN", render: () => <img src={logo5} alt="Logo 5" className="w-full h-full object-contain rounded-xl" referrerPolicy="no-referrer" /> },
+  { id: "logo-6", projectTitle: "Brand BARAKAH", category: "LOGO DESIGN", render: () => <img src={logo6} alt="Logo 6" className="w-full h-full object-contain rounded-xl" referrerPolicy="no-referrer" /> },
+  { id: "logo-7", projectTitle: "Brand BARAKAH", category: "LOGO DESIGN", render: () => <img src={logo7} alt="Logo 7" className="w-full h-full object-contain rounded-xl" referrerPolicy="no-referrer" /> },
+  { id: "logo-8", projectTitle: "Brand ONE UMMA HEART", category: "LOGO DESIGN", render: () => <img src={logo8} alt="Logo 8" className="w-full h-full object-contain rounded-xl" referrerPolicy="no-referrer" /> },
+  { id: "logo-9", projectTitle: "Brand MAKHZAAN", category: "LOGO DESIGN", render: () => <img src={logo9} alt="Logo 9" className="w-full h-full object-contain rounded-xl" referrerPolicy="no-referrer" /> },
+  { id: "logo-10", projectTitle: "Brand MAKHZAAN", category: "LOGO DESIGN", render: () => <img src={logo10} alt="Logo 10" className="w-full h-full object-contain rounded-xl" referrerPolicy="no-referrer" /> },
+  { id: "logo-11", projectTitle: "Brand MAKHZAAN", category: "LOGO DESIGN", render: () => <img src={logo11} alt="Logo 11" className="w-full h-full object-contain rounded-xl" referrerPolicy="no-referrer" /> },
+  { id: "logo-12", projectTitle: "Brand MAKHZAAN", category: "LOGO DESIGN", render: () => <img src={logo12} alt="Logo 12" className="w-full h-full object-contain rounded-xl" referrerPolicy="no-referrer" /> },
+  { id: "logo-13", projectTitle: "Brand AN NOOR", category: "LOGO DESIGN", render: () => <img src={logo13} alt="Logo 13" className="w-full h-full object-contain rounded-xl" referrerPolicy="no-referrer" /> },
+  { id: "logo-14", projectTitle: "Brand AN NOOR", category: "LOGO DESIGN", render: () => <img src={logo14} alt="Logo 14" className="w-full h-full object-contain rounded-xl" referrerPolicy="no-referrer" /> },
+  { id: "logo-15", projectTitle: "Brand ARAF", category: "LOGO DESIGN", render: () => <img src={logo15} alt="Logo 15" className="w-full h-full object-contain rounded-xl" referrerPolicy="no-referrer" /> },
+  { id: "logo-16", projectTitle: "Brand ARAF", category: "LOGO DESIGN", render: () => <img src={logo16} alt="Logo 16" className="w-full h-full object-contain rounded-xl" referrerPolicy="no-referrer" /> },
+  { id: "logo-17", projectTitle: "Brand ZAFA ", category: "LOGO DESIGN", render: () => <img src={logo17} alt="Logo 17" className="w-full h-full object-contain rounded-xl" referrerPolicy="no-referrer" /> },
+  { id: "logo-18", projectTitle: "Brand MAKHZAAN", category: "LOGO DESIGN", render: () => <img src={logo18} alt="Logo 18" className="w-full h-full object-contain rounded-xl" referrerPolicy="no-referrer" /> },
+  { id: "logo-19", projectTitle: "Brand MAKHZAAN", category: "LOGO DESIGN", render: () => <img src={log19} alt="Logo 19" className="w-full h-full object-contain rounded-xl" referrerPolicy="no-referrer" /> },
+  { id: "print-10", projectTitle: "ZAFA", category: "PRINT DESIGN", render: () => <img src={img10} alt="Print Design 1" className="w-full h-full object-cover rounded-xl" referrerPolicy="no-referrer" /> },
+  { id: "print-11", projectTitle: "AN-NOOR", category: "PRINT DESIGN", render: () => <img src={img11} alt="Print Design 2" className="w-full h-full object-cover rounded-xl" referrerPolicy="no-referrer" /> },
+  { id: "print-12", projectTitle: "GRAFITY", category: "PRINT DESIGN", render: () => <img src={img12} alt="Print Design 3" className="w-full h-full object-cover rounded-xl" referrerPolicy="no-referrer" /> },
+  { id: "print-13", projectTitle: "GRAFITY", category: "PRINT DESIGN", render: () => <img src={img13} alt="Print Design 4" className="w-full h-full object-cover rounded-xl" referrerPolicy="no-referrer" /> },
+  { id: "print-14", projectTitle: "BARAKAH", category: "PRINT DESIGN", render: () => <img src={img14} alt="Print Design 5" className="w-full h-full object-cover rounded-xl" referrerPolicy="no-referrer" /> },
+  { id: "social-1", projectTitle: "EVENING GAZA", category: "SOCIAL MEDIA", render: () => <img src={social1} alt="Social Media 1" className="w-full h-full object-cover rounded-xl" referrerPolicy="no-referrer" /> },
+  { id: "social-2", projectTitle: "EVENING GAZA", category: "SOCIAL MEDIA", render: () => <img src={social2} alt="Social Media 2" className="w-full h-full object-cover rounded-xl" referrerPolicy="no-referrer" /> },
+  { id: "social-3", projectTitle: "EVENING GAZA", category: "SOCIAL MEDIA", render: () => <img src={social3} alt="Social Media 3" className="w-full h-full object-cover rounded-xl" referrerPolicy="no-referrer" /> },
+  { id: "social-4", projectTitle: "EVENING GAZA", category: "SOCIAL MEDIA", render: () => <img src={social4} alt="Social Media 4" className="w-full h-full object-cover rounded-xl" referrerPolicy="no-referrer" /> },
+  { id: "social-5", projectTitle: "EVENING GAZA", category: "SOCIAL MEDIA", render: () => <img src={social5} alt="Social Media 5" className="w-full h-full object-cover rounded-xl" referrerPolicy="no-referrer" /> },
+  { id: "brand-1", projectTitle: "Branded Bag", category: "BRANDING", render: () => <img src={branding_bag} alt="Branded Bag" className="w-full h-full object-cover rounded-xl" referrerPolicy="no-referrer" /> },
+  { id: "brand-2", projectTitle: "Branded Mug", category: "BRANDING", render: () => <img src={branding_mug} alt="Branded Mug" className="w-full h-full object-cover rounded-xl" referrerPolicy="no-referrer" /> },
+  { id: "brand-3", projectTitle: "Branded Notebook", category: "BRANDING", render: () => <img src={branding_notebook} alt="Branded Notebook" className="w-full h-full object-cover rounded-xl" referrerPolicy="no-referrer" /> },
+  { id: "brand-4", projectTitle: "Branded Signboard", category: "BRANDING", render: () => <img src={branding_signboard} alt="Branded Signboard" className="w-full h-full object-cover rounded-xl" referrerPolicy="no-referrer" /> },
+  { id: "brand-5", projectTitle: "Branded T-Shirt", category: "BRANDING", render: () => <img src={branding_tshirt} alt="Branded T-Shirt" className="w-full h-full object-cover rounded-xl" referrerPolicy="no-referrer" /> },
+  { id: "pack-1", projectTitle: "Tote Bag", category: "PACKAGING", render: () => <img src={bag1} alt="Tote Bag" className="w-full h-full object-cover rounded-xl" referrerPolicy="no-referrer" /> },
+  { id: "pack-2", projectTitle: "Merch Bag", category: "PACKAGING", render: () => <img src={bag2} alt="Merch Bag" className="w-full h-full object-cover rounded-xl" referrerPolicy="no-referrer" /> },
+  { id: "pack-3", projectTitle: "Canvas Bag", category: "PACKAGING", render: () => <img src={bag3} alt="Canvas Bag" className="w-full h-full object-cover rounded-xl" referrerPolicy="no-referrer" /> },
 ];
 
 export const PortfolioGallery: React.FC = () => {
@@ -191,8 +98,8 @@ export const PortfolioGallery: React.FC = () => {
         );
 
   return (
-    <section id="portfolio" className="py-20 border-t border-slate-100/60 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+    <section id="portfolio" className="py-16 bg-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
         {/* Headers */}
         <div className="text-center space-y-3">
           <span className="text-[11px] font-extrabold tracking-[0.2em] text-[#E10F0F] uppercase">
@@ -209,22 +116,22 @@ export const PortfolioGallery: React.FC = () => {
           setActiveCategory={setActiveCategory}
         />
 
-        {/* Uniform card grid (matches provided screenshot) */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6">
+        {/* Uniform card grid  */}
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-5">
           {filteredItems.map((item) => (
             <div
               key={item.id}
-              className="rounded-xl bg-slate-50 p-4 border-2 border-transparent hover:shadow-xl hover:shadow-slate-200/60 transition-all duration-300 cursor-pointer group"
+              className="rounded-xl transition-all duration-300 cursor-pointer group"
             >
-              <div className="bg-white rounded-lg h-40 flex items-center justify-center p-4 shadow-sm overflow-hidden group-hover:shadow-md transition-shadow duration-300">
+              <div className="bg-white rounded-lg h-40 flex items-center justify-center p-4 shadow-sm border border-slate-100 group-hover:shadow-lg group-hover:shadow-slate-200/60 group-hover:-translate-y-1 group-hover:border-slate-200 transition-all duration-300">
                 {item.render()}
               </div>
 
-              <h4 className="mt-3 text-sm font-black text-slate-800 tracking-tight truncate group-hover:text-slate-900 transition-colors duration-300">
+              <h4 className="mt-3 text-[13px]  text-center font-bold text-slate-800 tracking-tight truncate group-hover:text-[#E10F0F] transition-colors duration-200">
                 {item.projectTitle}
               </h4>
 
-              <div className="text-[9px] font-extrabold text-[#E10F0F] uppercase tracking-wider mt-1">
+              <div className="text-[9px] flex justify-center items-center font-extrabold text center text-slate-400 uppercase tracking-wider mt-1 group-hover:text-[#E10F0F] transition-colors duration-200">
                 {item.category}
               </div>
             </div>
@@ -232,10 +139,13 @@ export const PortfolioGallery: React.FC = () => {
         </div>
 
         {/* Centered CTA Button */}
-        <div className="flex justify-center pt-8">
-          <button className="inline-flex items-center gap-2.5 bg-[#E10F0F] hover:bg-[#C90D0D] text-white text-[13px] font-extrabold py-4 px-10 rounded-xl transition-all duration-300 shadow-md shadow-red-500/10 hover:scale-[1.02] active:scale-[0.98]">
+        <div className="flex justify-center pt-6">
+          <button 
+            onClick={() => setActiveCategory("All")}
+            className="inline-flex items-center gap-2 bg-[#E10F0F] hover:bg-[#C90D0D] text-white text-[12px] font-bold py-3 px-8 rounded-lg transition-all duration-300 shadow-md shadow-red-500/10 hover:shadow-lg hover:shadow-red-500/20 hover:scale-[1.03] active:scale-[0.98] group"
+          >
             View All Projects
-            <ArrowRight className="w-4 h-4" />
+            <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
           </button>
         </div>
       </div>

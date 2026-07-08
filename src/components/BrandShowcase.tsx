@@ -1,5 +1,7 @@
+import { useState } from 'react';
 import { motion } from 'motion/react';
 import { Eye, ArrowUpRight } from 'lucide-react';
+ 
 
 type BrandShowcaseItem = {
   id: string;
@@ -88,27 +90,181 @@ const showcaseItems: BrandShowcaseItem[] = [
       colSpan: 'md:col-span-4',
       ratio: 'aspect-square',
     },
+    {
+      category: 'Apparel',
+      id: 'tshirt-1',
+      name: 'Premium Tee',
+      projectId: 'amanah',
+      projectTitle: 'AMANAH Premium Tee',
+      image: '/src/assets/images/t-shirt1.jpg',
+      colSpan: 'md:col-span-4',
+      ratio: 'aspect-square',
+    },
+    {
+      category: 'Apparel',
+      id: 'tshirt-2',
+      name: 'Graphic Tee',
+      projectId: 'barakah',
+      projectTitle: 'BARAKAH Graphic Tee',
+      image: '/src/assets/images/t-shirt2.jpg',
+      colSpan: 'md:col-span-4',
+      ratio: 'aspect-square',
+    },
+    {
+      category: 'Apparel',
+      id: 'tshirt-3',
+      name: 'Urban Tee',
+      projectId: 'bmfunding',
+      projectTitle: 'BARAKAH Graphic Tee',
+      image: '/src/assets/images/t-shirt3.jpg',
+      colSpan: 'md:col-span-4',
+      ratio: 'aspect-square',
+    },
+    {
+      category: 'Apparel',
+      id: 'tshirt-4',
+      name: 'Statement Tee',
+      projectId: 'empower',
+      projectTitle: 'EMPOWER Statement Tee',
+      image: '/src/assets/images/t-shirt4.jpg',
+      colSpan: 'md:col-span-4',
+      ratio: 'aspect-square',
+    },
+    {
+      category: 'Apparel',
+      id: 'tshirt-5',
+      name: 'Classic Tee',
+      projectId: 'amanah',
+      projectTitle: 'AMANAH Classic Tee',
+      image: '/src/assets/images/t-shirt5.jpg',
+      colSpan: 'md:col-span-4',
+      ratio: 'aspect-square',
+    },
+    {
+      category: 'Apparel',
+      id: 'hoodie-1',
+      name: 'Street Hoodie',
+      projectId: 'barakah',
+      projectTitle: 'BARAKAH Street Hoodie',
+      image: '/src/assets/images/hod1.jpg',
+      colSpan: 'md:col-span-4',
+      ratio: 'aspect-square',
+    },
+    {
+      category: 'Apparel',
+      id: 'hoodie-2',
+      name: 'Urban Hoodie',
+      projectId: 'bmfunding',
+      projectTitle: 'BARAKAH Street Hoodie',
+      image: '/src/assets/images/hodi2.jpg',
+      colSpan: 'md:col-span-6',
+      ratio: 'aspect-video',
+    },
+    {
+      category: 'Apparel',
+      id: 'hoodie-3',
+      name: 'Campus Hoodie',
+      projectId: 'amanah',
+      projectTitle: 'BARAKAH Street Hoodie',
+      image: '/src/assets/images/hodi3.jpg',
+      colSpan: 'md:col-span-6',
+      ratio: 'aspect-video',
+    },
+    {
+      category: 'Apparel',
+      id: 'hoodie-4',
+      name: 'Sport Hoodie',
+      projectId: 'barakah',
+      projectTitle: 'BARAKAH Street Hoodie',
+      image: '/src/assets/images/hodi4.jpg',
+      colSpan: 'md:col-span-6',
+      ratio: 'aspect-video',
+    },
+    {
+      category: 'Apparel',
+      id: 'hoodie-5',
+      name: 'Premium Hoodie',
+      projectId: 'barakah',
+      projectTitle: 'BARAKAH Premium Hoodie',
+      image: '/src/assets/images/hodi5.jpg',
+      colSpan: 'md:col-span-6',
+      ratio: 'aspect-video',
+    },
+    {
+      category: 'Apparel',
+      id: 'hoodie-6',
+      name: 'Designer Hoodie',
+      projectId: 'bmfunding',
+      projectTitle: 'BARAKAH Street Hoodie',
+      image: '/src/assets/images/hodi6.jpg',
+      colSpan: 'md:col-span-6',
+      ratio: 'aspect-video',
+    },
+    {
+      category: 'Apparel',
+      id: 'hoodie-7',
+      name: 'empower',
+      projectId: 'amanah',
+      projectTitle: 'AMANAH Studio Hoodie',
+      image: '/src/assets/images/hodi7.jpg',
+      colSpan: 'md:col-span-6',
+      ratio: 'aspect-video',
+    },
+    {
+      category: 'Packaging',
+      id: 'bag-1',
+      name: 'Tote Bag',
+      projectId:  'empower',
+      projectTitle: ' EMPOWER WORLD, Tote Bag',
+      image: '/src/assets/images/bag-1.jpg',
+      colSpan: 'md:col-span-4',
+      ratio: 'aspect-square',
+    },
+    {
+      category: 'Packaging',
+      id: 'bag-2',
+      name: 'Merch Bag',
+      projectId: 'barakah',
+      projectTitle: 'BARAKAH Bag',
+      image: '/src/assets/images/bag2.jpg',
+      colSpan: 'md:col-span-4',
+      ratio: 'aspect-square',
+    },
+    {
+      category: 'Packaging',
+      id: 'bag-3',
+      name: 'Canvas Bag',
+      projectId: 'amanah',
+      projectTitle: 'ONE UMMAH HEART ...!',
+      image: '/src/assets/images/bag-3.jpg',
+      colSpan: 'md:col-span-4',
+      ratio: 'aspect-square',
+    },
   ];
 
 function BrandShowcase({ items, onItemClick }: BrandShowcaseProps) {
-  const itemsToRender = items ?? showcaseItems;
+  const [showAll, setShowAll] = useState(false);
+  const allItems = items ?? showcaseItems;
+  const itemsToRender = showAll ? allItems : allItems.slice(0, 7);
 
   return (
     <section id="showcase" className="bg-[#FAF5F5] py-24 border-b border-red-100 relative z-10">
       <div className="max-w-7xl mx-auto px-6">
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
-          <div className="text-left">
+          <div className="space-y-6 ">
             <span className="text-[11px] font-extrabold tracking-[0.2em] text-[#E10F0F] uppercase block mb-3">
               Sensory Collaterals
             </span>
             <h2 className="text-3xl sm:text-4xl font-black tracking-tight text-slate-900 font-display">
               Brand Identity Showcase
+
             </h2>
-          </div>
-          <p className="text-[13px] text-slate-500 max-w-sm leading-relaxed text-left">
+             <p className="text-[13px]  text-left leading-relaxed text-slate-500 font-medium">
             A beautiful, immersive bento-grid display of bespoke physical and digital elements styled to demonstrate actual real-world visual consistency.
           </p>
+          </div>
+      
         </div>
 
         {/* Bento Grid */}
@@ -121,7 +277,7 @@ function BrandShowcase({ items, onItemClick }: BrandShowcaseProps) {
               viewport={{ once: true, margin: '-50px' }}
               transition={{ duration: 0.6 }}
               onClick={() => onItemClick?.(item.projectId)}
-              className={`${item.colSpan} relative rounded-3xl overflow-hidden bg-white border border-red-100 group cursor-pointer shadow-md`}
+              className={`${item.colSpan} relative rounded-3xl overflow-hidden bg-white border border-red-100 group cursor-pointer shadow-md hover:shadow-xl hover:shadow-red-100/50 hover:border-[#E10F0F]/30 transition-all duration-300`}
             >
               {/* Image Container */}
               <div className={`w-full ${item.ratio} relative overflow-hidden`}>
@@ -164,6 +320,19 @@ function BrandShowcase({ items, onItemClick }: BrandShowcaseProps) {
             </motion.div>
           ))}
         </div>
+
+        {/* View All / Show Less Button */}
+        {allItems.length > 7 && (
+          <div className="flex justify-center mt-12">
+            <button
+              onClick={() => setShowAll(!showAll)}
+              className="inline-flex items-center gap-2 bg-[#E10F0F] hover:bg-[#C90D0D] text-white text-[12px] font-bold py-3 px-8 rounded-lg transition-all duration-300 shadow-md shadow-red-500/10 hover:shadow-lg hover:shadow-red-500/20 hover:scale-[1.03] active:scale-[0.98]"
+            >
+              {showAll ? 'Show Less' : 'View All'}
+              <ArrowUpRight size={16} className={`transition-transform duration-300 ${showAll ? 'rotate-90' : ''}`} />
+            </button>
+          </div>
+        )}
       </div>
     </section>
   );
