@@ -110,7 +110,7 @@ export const BrandIdentityShowcase: React.FC = () => {
           <span className="text-[10px] font-extrabold tracking-[0.2em] text-[#E10F0F] uppercase block">
             Brand Identity Showcase
           </span>
-          <h2 className="text-2xl sm:text-3xl font-black tracking-tight text-slate-900 font-display">
+          <h2 className="text-[18px] md:text-[20px] font-black tracking-tight text-slate-900 font-display">
             Bringing Brands To Life
           </h2>
         </div>

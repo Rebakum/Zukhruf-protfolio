@@ -1,7 +1,7 @@
 import React from "react";
 import { Phone, Mail, MapPin } from "lucide-react";
 
-export const ContactInfoBanner: React.FC = () => {
+export const ContactInfoBanner: React.FC = React.memo(() => {
   const contactDetails = [
     {
       label: "Phone",
@@ -37,10 +37,10 @@ export const ContactInfoBanner: React.FC = () => {
             
             {/* Text details */}
             <div className="text-left leading-tight">
-              <div className="text-[10px] font-bold uppercase tracking-widest text-red-200">
+              <div className="text-[13px] font-bold uppercase tracking-widest text-red-200">
                 {detail.label}
               </div>
-              <div className="text-[13px] font-extrabold tracking-tight mt-0.5 font-display">
+              <div className="text-[18px] font-extrabold tracking-tight mt-0.5 font-display">
                 {detail.value}
               </div>
             </div>
@@ -49,4 +49,4 @@ export const ContactInfoBanner: React.FC = () => {
       </div>
     </section>
   );
-};
+});

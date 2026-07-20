@@ -26,16 +26,16 @@ interface FeaturedProjectsProps {
   setActiveCategory: (category: string) => void;
 }
 
-export const FeaturedProjects: React.FC<FeaturedProjectsProps> = ({
+export const FeaturedProjects: React.FC<FeaturedProjectsProps> = React.memo(({
   activeCategory,
   setActiveCategory,
 }) => {
   const categories = ["All", "Logo Design", "Branding", "Packaging", "Social Media", "Print Design"];
 
   return (
-    <div className="flex flex-col items-center space-y-5">
+    <div className="flex flex-col items-center justify-center space-y-5">
       {/* Category Pills Slider/Container */}
-      <div className="flex flex-wrap justify-center gap-3 py-1">
+      <div className="flex-wrap justify-center items-center gap-3 py-1 flex w-full">
         {categories.map((cat) => (
           <CategoryPill
             key={cat}
@@ -47,4 +47,4 @@ export const FeaturedProjects: React.FC<FeaturedProjectsProps> = ({
       </div>
     </div>
   );
-};
+});

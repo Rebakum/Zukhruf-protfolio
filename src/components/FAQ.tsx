@@ -10,10 +10,10 @@ interface FAQItemProps {
 
 const FAQItem: React.FC<FAQItemProps> = ({ question, answer, isOpen, onToggle }) => {
   return (
-    <div className="border border-slate-100 rounded-2xl overflow-hidden bg-white shadow-sm transition-all duration-300 hover:shadow-md hover:border-slate-200">
+    <div className="border border-slate-200 rounded-2xl overflow-hidden bg-white shadow-lg hover:shadow-red-200/60 hover:border-red-200 transition-all duration-300">
       <button
         onClick={onToggle}
-        className="w-full flex justify-between items-center p-5 text-left font-display text-[13px] font-extrabold text-slate-800 hover:bg-slate-50 hover:pl-6 transition-all duration-200 focus:outline-none"
+        className="w-full flex justify-between items-center p-5 text-left font-display text-[18px] md:text-[20px] font-extrabold text-slate-800 hover:bg-slate-50 hover:pl-6 transition-all duration-200 focus:outline-none"
       >
         <span>{question}</span>
         <span className="text-[#E10F0F] shrink-0 ml-3">
@@ -27,7 +27,7 @@ const FAQItem: React.FC<FAQItemProps> = ({ question, answer, isOpen, onToggle })
           isOpen ? "max-h-40 border-t border-slate-50 opacity-100" : "max-h-0 opacity-0"
         }`}
       >
-        <div className="p-5 text-[12px] leading-relaxed text-slate-500 font-medium bg-slate-50/50">
+        <div className="p-5 text-[16px] leading-relaxed text-slate-500 font-medium bg-slate-50/50">
           {answer}
         </div>
       </div>
@@ -35,7 +35,7 @@ const FAQItem: React.FC<FAQItemProps> = ({ question, answer, isOpen, onToggle })
   );
 };
 
-export const FAQ: React.FC = () => {
+export const FAQ: React.FC = React.memo(() => {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   const faqData = [
@@ -60,13 +60,13 @@ export const FAQ: React.FC = () => {
   return (
     <div className="space-y-6 text-left bg-white border border-slate-100 p-7 rounded-2xl shadow-sm hover:shadow-lg transition-shadow duration-300">
       <div className="space-y-2">
-        <span className="text-[11px] font-extrabold tracking-[0.2em] text-[#E10F0F] uppercase block">
+        <span className="text-[13px] font-extrabold tracking-[0.2em] text-[#E10F0F] uppercase block">
           FAQ
         </span>
-        <h3 className="text-2xl font-black tracking-tight text-slate-900 leading-tight font-display">
+       <h2 className="text-[32px] sm:text-[36px] lg:text-[40px] font-black tracking-tight text-slate-900 font-display">
           Frequently Asked <br />
           Questions
-        </h3>
+        </h2>
       </div>
 
       <div className="space-y-3 pt-2">
@@ -82,4 +82,4 @@ export const FAQ: React.FC = () => {
       </div>
     </div>
   );
-};
+});

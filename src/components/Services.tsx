@@ -2,7 +2,7 @@ import React from "react";
 import { Compass, ShieldCheck, Package, Share2, Printer, Shirt } from "lucide-react";
 import { motion } from "motion/react";
 
-export const Services: React.FC = () => {
+export const Services: React.FC = React.memo(() => {
   const servicesList = [
     {
       title: "Logo Design",
@@ -37,7 +37,7 @@ export const Services: React.FC = () => {
   ];
 
   return (
-    <section id="services" className="py-16  rounded-2xl shadow-slate-200/50 bg-slate-50 ">
+    <section id="services" className="scroll-mt-24 py-16  rounded-2xl shadow-slate-200/50 bg-slate-50 ">
       <div className="space-y-10 px-6">
         {/* Header */}
         <motion.div
@@ -47,16 +47,16 @@ export const Services: React.FC = () => {
           transition={{ duration: 0.5 }}
           className="text-center space-y-3"
         >
-          <span className="text-[11px] font-extrabold tracking-[0.2em] text-[#E10F0F] uppercase">
+          <span className="text-[13px] font-extrabold tracking-[0.2em] text-[#E10F0F] uppercase">
             What I Do
           </span>
-          <h2 className="text-3xl sm:text-4xl font-black tracking-tight text-slate-900 font-display">
+          <h2 className="text-[32px] sm:text-[36px] lg:text-[40px] font-black tracking-tight text-slate-900 font-display">
             My Services
           </h2>
         </motion.div>
 
         {/* 3x2 Grid on large, 2x3 on medium, list on small */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {servicesList.map((service, i) => (
             <motion.div
               key={i}
@@ -64,7 +64,7 @@ export const Services: React.FC = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: i * 0.08 }}
-              className="bg-white hover:border-red-500/50 rounded-2xl p-7 text-center flex flex-col items-center space-y-4 transition-all duration-300 min-h-[220px] hover:shadow-xl hover:shadow-red-100/60 hover:scale-[1.03] border border-slate-200 cursor-pointer group"
+              className="bg-white hover:border-red-200 rounded-2xl p-7 text-center flex flex-col items-center space-y-4 transition-all duration-300 min-h-[220px] hover:shadow-red-200/60 shadow-lg hover:scale-[1.03] border border-slate-200 cursor-pointer group"
             >
               {/* Icon Holder */}
               <div className="w-14 h-14 rounded-full bg-white flex items-center justify-center transition-all duration-300 group-hover:scale-110">
@@ -73,10 +73,10 @@ export const Services: React.FC = () => {
 
               {/* Text */}
               <div className="space-y-2">
-                <h3 className="text-[14px] font-extrabold text-slate-900 tracking-tight uppercase transition-colors duration-300 group-hover:text-[#E10F0F]">
+                <h3 className="text-[18px] md:text-[20px] font-extrabold text-slate-900 tracking-tight uppercase transition-colors duration-300 group-hover:text-[#E10F0F]">
                   {service.title}
                 </h3>
-                <p className="text-[12px] leading-relaxed text-slate-400 font-medium px-2 transition-colors duration-300 group-hover:text-slate-600">
+                <p className="text-[16px] leading-relaxed text-slate-400 font-medium px-2 transition-colors duration-300 group-hover:text-slate-600">
                   {service.desc}
                 </p>
               </div>
@@ -86,4 +86,4 @@ export const Services: React.FC = () => {
       </div>
     </section>
   );
-};
+});

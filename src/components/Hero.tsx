@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { CheckCircle2, ArrowRight } from "lucide-react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, EffectFade } from "swiper/modules";
@@ -28,7 +29,7 @@ const slides = [
   { image: sunAmanahkImg, title: "AMANAH Apparel", tag: "Packaging / Fashion" },
 ];
 
-export const Hero: React.FC = () => {
+export const Hero: React.FC = React.memo(() => {
   const checkmarks = [
     "Logo Design",
     "Brand Identity",
@@ -37,27 +38,27 @@ export const Hero: React.FC = () => {
   ];
 
   return (
-    <section id="home" className="py-16 lg:py-24">
+    <section id="home" className="scroll-mt-24 py-16 lg:py-24">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
         {/* Left Column */}
         <div className="lg:col-span-6 space-y-7 text-left">
-          <span className="text-[11px] font-extrabold tracking-[0.2em] text-[#E10F0F] uppercase">
+          <span className="text-[13px] font-extrabold tracking-[0.2em] text-[#E10F0F] uppercase">
             Graphic Designer
           </span>
-          <h1 className="text-4xl sm:text-5xl lg:text-[3.5rem] font-black tracking-tight text-slate-900 leading-[1.08] font-display">
+          <h1 className="text-[32px] sm:text-[36px] lg:text-[40px] font-black tracking-tight text-slate-900 leading-[1.08] font-display">
             Build Strong Brands <br />
             That <span className="text-[#E10F0F]">People Remember</span>
           </h1>
-          <p className="text-[15px] leading-relaxed text-slate-500 max-w-xl">
+          <p className="text-[16px] leading-relaxed text-slate-700 max-w-xl">
             I create modern logos and brand identities that help businesses stand out and stay memorable.
           </p>
 
           {/* Checklist */}
-          <div className="grid grid-cols-2 gap-y-4 gap-x-6 max-w-md pt-2">
+          <div className="lg:grid grid-cols-2 gap-y-4 hidden  gap-x-6 max-w-md pt-2">
             {checkmarks.map((item) => (
               <div key={item} className="flex items-center gap-2.5">
                 <CheckCircle2 className="w-5 h-5 text-[#E10F0F] fill-red-50 stroke-2 shrink-0" />
-                <span className="text-[13px] font-semibold text-slate-700 tracking-tight">
+                <span className="text-[14px] font-semibold text-slate-700 tracking-tight">
                   {item}
                 </span>
               </div>
@@ -66,20 +67,20 @@ export const Hero: React.FC = () => {
 
           {/* Action Buttons */}
           <div className="flex flex-wrap gap-4 pt-4">
-            <a
-              href="#portfolio"
-              className="inline-flex items-center gap-2.5 bg-[#E10F0F] hover:bg-[#C90D0D] text-white text-[14px] font-bold py-4 px-8 rounded-xl transition-all duration-300 shadow-md shadow-red-500/10 hover:shadow-xl hover:shadow-red-500/25 hover:scale-[1.05] active:scale-[0.98] group"
+            <Link
+              to="/portfolio"
+              className="inline-flex items-center gap-2.5 bg-[#E10F0F] hover:bg-[#C90D0D] text-white text-[16px] font-bold py-4 px-8 rounded-xl transition-all duration-300 shadow-md shadow-red-500/10 hover:shadow-xl hover:shadow-red-500/25 hover:scale-[1.05] active:scale-[0.98] group"
             >
               View Portfolio
               <ArrowRight className="w-4 h-4" />
-            </a>
-            <a
-              href="#contact"
-              className="inline-flex items-center gap-2.5 bg-white hover:bg-slate-50 border border-slate-200 text-slate-800 text-[14px] font-bold py-4 px-8 rounded-xl transition-all duration-300 hover:shadow-lg hover:shadow-slate-200/50 hover:scale-[1.05] active:scale-[0.98] group"
+            </Link>
+            <Link
+              to="/contact"
+              className="inline-flex items-center gap-2.5 hover:border-red-500 hover:text-red-500 bg-white hover:bg-slate-50 border border-slate-200 text-slate-800 text-[16px] font-bold py-4 px-8 rounded-xl transition-all duration-300 hover:shadow-lg hover:shadow-slate-200/50 hover:scale-[1.05] active:scale-[0.98] group"
             >
               Hire Me
               <ArrowRight className="w-4 h-4" />
-            </a>
+            </Link>
           </div>
         </div>
 
@@ -100,6 +101,7 @@ export const Hero: React.FC = () => {
                     <img
                       src={slide.image}
                       alt={slide.title}
+                      loading={idx === 0 ? "eager" : "lazy"}
                       className="w-full h-full object-cover"
                       referrerPolicy="no-referrer"
                     />
@@ -107,7 +109,7 @@ export const Hero: React.FC = () => {
                       <p className="text-[10px] text-red-400 font-bold uppercase tracking-widest mb-1">
                         {slide.tag}
                       </p>
-                      <h3 className="text-white font-display font-bold text-lg">
+                      <h3 className="text-white font-display font-bold text-[18px] md:text-[20px]">
                         {slide.title}
                       </h3>
                     </div>
@@ -120,4 +122,4 @@ export const Hero: React.FC = () => {
       </div>
     </section>
   );
-};
+});

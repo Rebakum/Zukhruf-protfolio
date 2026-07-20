@@ -31,7 +31,6 @@ type BrandShowcaseItem = {
   image: string;
   category?: string;
   colSpan: string;
-  ratio: string;
 };
 
 interface BrandShowcaseProps {
@@ -48,7 +47,6 @@ const showcaseItems: BrandShowcaseItem[] = [
       projectTitle: 'BARAKAH Arch Monogram',
       image: 'https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?auto=format&fit=crop&w=800&q=80',
       colSpan: 'md:col-span-4',
-      ratio: 'aspect-square',
     },
     {
       category: 'Print Design',
@@ -58,7 +56,6 @@ const showcaseItems: BrandShowcaseItem[] = [
       projectTitle: 'AMANAH Linen Card',
       image: brandingBag,
       colSpan: 'md:col-span-8',
-      ratio: 'aspect-[21/9]',
     },
     {
       category: 'Branding',
@@ -68,7 +65,6 @@ const showcaseItems: BrandShowcaseItem[] = [
       projectTitle: 'BARAKAH Coffee Mug',
       image: brandingMug,
       colSpan: 'md:col-span-6',
-      ratio: 'aspect-video',
     },
     {
       category: 'Branding',
@@ -78,7 +74,6 @@ const showcaseItems: BrandShowcaseItem[] = [
       projectTitle: 'BARAKAH Studio Planner',
       image: brandingNotebook,
       colSpan: 'md:col-span-6',
-      ratio: 'aspect-video',
     },
     {
       category: 'Packaging',
@@ -88,7 +83,6 @@ const showcaseItems: BrandShowcaseItem[] = [
       projectTitle: 'BM FUNDING Tote Bag',
       image: brandingBag,
       colSpan: 'md:col-span-4',
-      ratio: 'aspect-square',
     },
     {
       category: 'Branding',
@@ -98,7 +92,6 @@ const showcaseItems: BrandShowcaseItem[] = [
       projectTitle: 'AMANAH Cotton Tee',
       image: brandingTshirt,
       colSpan: 'md:col-span-4',
-      ratio: 'aspect-square',
     },
     {
       category: 'Branding',
@@ -108,7 +101,6 @@ const showcaseItems: BrandShowcaseItem[] = [
       projectTitle: 'EMPOWER Building Sign',
       image: brandingSignboard,
       colSpan: 'md:col-span-4',
-      ratio: 'aspect-square',
     },
     {
       category: 'Apparel',
@@ -118,7 +110,6 @@ const showcaseItems: BrandShowcaseItem[] = [
       projectTitle: 'AMANAH Premium Tee',
       image: tShirt1,
       colSpan: 'md:col-span-4',
-      ratio: 'aspect-square',
     },
     {
       category: 'Apparel',
@@ -128,7 +119,6 @@ const showcaseItems: BrandShowcaseItem[] = [
       projectTitle: 'BARAKAH Graphic Tee',
       image: tShirt2,
       colSpan: 'md:col-span-4',
-      ratio: 'aspect-square',
     },
     {
       category: 'Apparel',
@@ -138,7 +128,6 @@ const showcaseItems: BrandShowcaseItem[] = [
       projectTitle: 'BARAKAH Graphic Tee',
       image: tShirt3,
       colSpan: 'md:col-span-4',
-      ratio: 'aspect-square',
     },
     {
       category: 'Apparel',
@@ -148,7 +137,6 @@ const showcaseItems: BrandShowcaseItem[] = [
       projectTitle: 'EMPOWER Statement Tee',
       image: tShirt4,
       colSpan: 'md:col-span-4',
-      ratio: 'aspect-square',
     },
     {
       category: 'Apparel',
@@ -158,7 +146,6 @@ const showcaseItems: BrandShowcaseItem[] = [
       projectTitle: 'AMANAH Classic Tee',
       image: tShirt5,
       colSpan: 'md:col-span-4',
-      ratio: 'aspect-square',
     },
     {
       category: 'Apparel',
@@ -168,7 +155,6 @@ const showcaseItems: BrandShowcaseItem[] = [
       projectTitle: 'BARAKAH Street Hoodie',
       image: hod1,
       colSpan: 'md:col-span-4',
-      ratio: 'aspect-square',
     },
     {
       category: 'Apparel',
@@ -178,7 +164,6 @@ const showcaseItems: BrandShowcaseItem[] = [
       projectTitle: 'BARAKAH Street Hoodie',
       image: hodi2,
       colSpan: 'md:col-span-6',
-      ratio: 'aspect-video',
     },
     {
       category: 'Apparel',
@@ -188,7 +173,6 @@ const showcaseItems: BrandShowcaseItem[] = [
       projectTitle: 'BARAKAH Street Hoodie',
       image: hodi3,
       colSpan: 'md:col-span-6',
-      ratio: 'aspect-video',
     },
     {
       category: 'Apparel',
@@ -198,7 +182,6 @@ const showcaseItems: BrandShowcaseItem[] = [
       projectTitle: 'BARAKAH Street Hoodie',
       image: hodi4,
       colSpan: 'md:col-span-6',
-      ratio: 'aspect-video',
     },
     {
       category: 'Apparel',
@@ -208,7 +191,6 @@ const showcaseItems: BrandShowcaseItem[] = [
       projectTitle: 'BARAKAH Premium Hoodie',
       image: hodi5,
       colSpan: 'md:col-span-6',
-      ratio: 'aspect-video',
     },
     {
       category: 'Apparel',
@@ -218,7 +200,6 @@ const showcaseItems: BrandShowcaseItem[] = [
       projectTitle: 'BARAKAH Street Hoodie',
       image: hodi6,
       colSpan: 'md:col-span-6',
-      ratio: 'aspect-video',
     },
     {
       category: 'Apparel',
@@ -228,7 +209,6 @@ const showcaseItems: BrandShowcaseItem[] = [
       projectTitle: 'AMANAH Studio Hoodie',
       image: hodi7,
       colSpan: 'md:col-span-6',
-      ratio: 'aspect-video',
     },
     {
       category: 'Packaging',
@@ -238,7 +218,6 @@ const showcaseItems: BrandShowcaseItem[] = [
       projectTitle: ' EMPOWER WORLD, Tote Bag',
       image: bag1,
       colSpan: 'md:col-span-4',
-      ratio: 'aspect-square',
     },
     {
       category: 'Packaging',
@@ -248,7 +227,6 @@ const showcaseItems: BrandShowcaseItem[] = [
       projectTitle: 'BARAKAH Bag',
       image: bag2,
       colSpan: 'md:col-span-4',
-      ratio: 'aspect-square',
     },
     {
       category: 'Packaging',
@@ -258,7 +236,6 @@ const showcaseItems: BrandShowcaseItem[] = [
       projectTitle: 'ONE UMMAH HEART ...!',
       image: bag3,
       colSpan: 'md:col-span-4',
-      ratio: 'aspect-square',
     },
   ];
 
@@ -267,20 +244,24 @@ function BrandShowcase({ items, onItemClick }: BrandShowcaseProps) {
   const allItems = items ?? showcaseItems;
   const itemsToRender = showAll ? allItems : allItems.slice(0, 7);
 
+  const handleToggleShowAll = () => {
+    setShowAll((prev) => !prev);
+  };
+
   return (
-    <section id="showcase" className="bg-[#FAF5F5] py-24 border-b border-red-100 relative z-10">
-      <div className="max-w-7xl mx-auto px-6">
+    <section id="showcase" className="scroll-mt-24 bg-[#FAF5F5] py-24 border-b border-red-100 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
           <div className="space-y-6 ">
-            <span className="text-[11px] font-extrabold tracking-[0.2em] text-[#E10F0F] uppercase block mb-3">
+            <span className="text-[13px] font-extrabold tracking-[0.2em] text-[#E10F0F] uppercase block mb-3">
               Sensory Collaterals
             </span>
-            <h2 className="text-3xl sm:text-4xl font-black tracking-tight text-slate-900 font-display">
+            <h2 className="text-[32px] sm:text-[36px] lg:text-[40px] font-black tracking-tight text-slate-900 font-display">
               Brand Identity Showcase
 
             </h2>
-             <p className="text-[13px]  text-left leading-relaxed text-slate-500 font-medium">
+             <p className="text-[16px]  text-left leading-relaxed text-slate-500 font-medium">
             A beautiful, immersive bento-grid display of bespoke physical and digital elements styled to demonstrate actual real-world visual consistency.
           </p>
           </div>
@@ -300,39 +281,42 @@ function BrandShowcase({ items, onItemClick }: BrandShowcaseProps) {
               className={`${item.colSpan} relative rounded-3xl overflow-hidden bg-white border border-red-100 group cursor-pointer shadow-md hover:shadow-xl hover:shadow-red-100/50 hover:border-[#E10F0F]/30 transition-all duration-300`}
             >
               {/* Image Container */}
-              <div className={`w-full ${item.ratio} relative overflow-hidden`}>
+              <div className="w-full h-64 sm:h-72 relative overflow-hidden">
                 <img
                   src={item.image}
                   alt={item.name}
+                  loading="lazy"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                   referrerPolicy="no-referrer"
                 />
 
                 {/* Hover overlay */}
-                <div className="absolute inset-0 bg-red-950/95 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-between p-8 text-left z-10">
-                  <div className="flex items-center justify-between">
-                    <span className="text-[10px] text-brand-green uppercase tracking-widest font-bold">
-                      {item.name}
-                    </span>
-                    <div className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-white/80">
-                      <ArrowUpRight size={16} />
+                <div className="absolute inset-0 translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out z-10">
+                  <div className="w-full opacity-35 h-full bg-gradient-to-t from-red-950 via-red-950/98 to-red-950/90 flex flex-col justify-between p-8 text-left">
+                    <div className="flex items-center justify-between opacity-0 group-hover:opacity-50 transition-all duration-500 ease-out delay-200">
+                      <span className="text-[13px] text-white uppercase tracking-widest font-bold">
+                        {item.name}
+                      </span>
+                      <div className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-white/80 group-hover:bg-white/20 transition-colors duration-300">
+                        <ArrowUpRight size={16} />
+                      </div>
                     </div>
-                  </div>
 
-                  <div>
-                    <h3 className="font-display font-extrabold text-2xl text-white tracking-tight mb-2">
-                      {item.projectTitle}
-                    </h3>
-                    <p className="text-[12px] text-red-200 flex items-center gap-1.5">
-                      <Eye size={12} className="text-brand-green" />
-                      Click to explore full Case Study details
-                    </p>
+                    <div className="opacity-0 group-hover:opacity-100 transition-all duration-500 ease-out delay-300">
+                      <h3 className="font-display font-extrabold text-2xl text-white tracking-tight mb-2">
+                        {item.projectTitle}
+                      </h3>
+                      <p className="text-[15px] text-red-200 flex items-center gap-1.5 opacity-0 group-hover:opacity-100 transition-all duration-500 ease-out delay-[400ms]">
+                        <Eye size={12} className="text-brand-green" />
+                        Click to explore full Case Study details
+                      </p>
+                    </div>
                   </div>
                 </div>
 
                 {/* Subtle default indicator tag */}
-                <div className="absolute bottom-4 left-4 bg-red-600 px-3 py-1.5 rounded-lg border border-red-500 z-0 group-hover:opacity-0 transition-opacity">
-                  <span className="text-[10px] text-white font-bold uppercase tracking-wider">
+                <div className="absolute bottom-4 left-4 bg-red-600 px-3 py-1.5 rounded-lg border border-red-500 z-0 group-hover:opacity-0 group-hover:scale-95 transition-all duration-500 ease-out">
+                  <span className="text-[13px] text-white font-bold uppercase tracking-wider">
                     {item.name}
                   </span>
                 </div>
@@ -345,8 +329,9 @@ function BrandShowcase({ items, onItemClick }: BrandShowcaseProps) {
         {allItems.length > 7 && (
           <div className="flex justify-center mt-12">
             <button
-              onClick={() => setShowAll(!showAll)}
-              className="inline-flex items-center gap-2 bg-[#E10F0F] hover:bg-[#C90D0D] text-white text-[12px] font-bold py-3 px-8 rounded-lg transition-all duration-300 shadow-md shadow-red-500/10 hover:shadow-lg hover:shadow-red-500/20 hover:scale-[1.03] active:scale-[0.98]"
+              type="button"
+              onClick={handleToggleShowAll}
+              className="inline-flex items-center gap-2 bg-[#E10F0F] hover:bg-[#C90D0D] text-white text-[13px] font-bold py-3 px-8 rounded-lg transition-all duration-300 shadow-md shadow-red-500/10 hover:shadow-lg hover:shadow-red-500/20 hover:scale-[1.03] active:scale-[0.98] cursor-pointer"
             >
               {showAll ? 'Show Less' : 'View All'}
               <ArrowUpRight size={16} className={`transition-transform duration-300 ${showAll ? 'rotate-90' : ''}`} />
